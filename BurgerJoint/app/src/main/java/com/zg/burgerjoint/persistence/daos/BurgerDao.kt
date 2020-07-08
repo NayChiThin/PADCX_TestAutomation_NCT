@@ -9,6 +9,9 @@ interface BurgerDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertBurgers(burgers : List<BurgerVO>)
 
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insert(burger : BurgerVO)
+
     @Query("SELECT * FROM burgers")
     fun getAllBurgers() : LiveData<List<BurgerVO>>
 
