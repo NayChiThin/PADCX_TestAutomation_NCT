@@ -55,7 +55,7 @@ class MainPresenterImplTest {
         val imageView = ImageView(ApplicationProvider.getApplicationContext())
         mPresenter.onTapAddToCart(tappedBurger,imageView)
         verify {
-            mView.animateAddBurgerToCart(tappedBurger,imageView)
+            mView.addBurgerToCart(tappedBurger,imageView)
         }
     }
 
@@ -63,7 +63,7 @@ class MainPresenterImplTest {
     fun onTapCart_callNavigateToCartScreen() {
         mPresenter.onTapCart()
         verify {
-            mView.navigateToCartScreen()
+            mView.navigatetoCartScreen()
         }
     }
 
@@ -77,7 +77,7 @@ class MainPresenterImplTest {
         val imageView = ImageView(ApplicationProvider.getApplicationContext())
         mPresenter.onTapBurger(tappedBurger,imageView)
         verify {
-            mView.navigateToBurgerDetailsScreenWithAnimation(tappedBurger.burgerId,imageView)
+            mView.navigateToBurgerDetailsScreen(tappedBurger.burgerId,imageView)
         }
     }
 

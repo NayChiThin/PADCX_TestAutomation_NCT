@@ -15,11 +15,11 @@ class MainPresenterImpl : MainPresenter, BaseAppPresenterImpl<MainView>() {
 
     override fun onTapAddToCart(burger: BurgerVO, burgerImageView: ImageView) {
         mBurgerModel.addItemToCart(burger)
-        mView.animateAddBurgerToCart(burger, burgerImageView)
+        mView.addBurgerToCart(burger, burgerImageView)
     }
 
     override fun onTapCart() {
-        mView.navigateToCartScreen()
+        mView.navigatetoCartScreen()
     }
 
     override fun onUIReady(owner: LifecycleOwner) {
@@ -35,6 +35,6 @@ class MainPresenterImpl : MainPresenter, BaseAppPresenterImpl<MainView>() {
     }
 
     override fun onTapBurger(burger: BurgerVO,burgerImageView: ImageView) {
-        mView.navigateToBurgerDetailsScreenWithAnimation(burgerId = burger.burgerId, burgerImageView = burgerImageView)
+        mView.navigateToBurgerDetailsScreen(burgerId = burger.burgerId, burgerImageView = burgerImageView)
     }
 }

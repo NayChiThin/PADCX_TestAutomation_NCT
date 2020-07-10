@@ -34,7 +34,7 @@ class CartActivity : BaseActivity(), CartView {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setUpAnimations()
+//        setUpAnimations()
         setContentView(R.layout.activity_cart)
         setSupportActionBar(toolbar)
         setUpPresenter()

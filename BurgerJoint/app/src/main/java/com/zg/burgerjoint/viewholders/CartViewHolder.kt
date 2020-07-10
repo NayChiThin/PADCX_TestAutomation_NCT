@@ -4,10 +4,10 @@ import android.view.View
 import com.bumptech.glide.Glide
 import com.zg.burgerjoint.data.vos.BurgerVO
 import com.zg.burgerjoint.delegates.CartViewHolderActionDelegate
-import kotlinx.android.synthetic.main.activity_burger_details.*
 import kotlinx.android.synthetic.main.view_item_burger.view.tvBurgerName
 import kotlinx.android.synthetic.main.view_item_burger.view.tvDescription
 import kotlinx.android.synthetic.main.view_item_cart.view.*
+import kotlinx.android.synthetic.main.view_item_cart.view.ivBurger
 
 class CartViewHolder(itemView: View, private val mDelegate: CartViewHolderActionDelegate)
     : BaseViewHolder<BurgerVO>(itemView) {
